@@ -66,6 +66,10 @@ body {
     text-decoration: underline;
   }
 
+.home-banner{
+  width: 100%;
+}
+
 .title{
   text-align: center;
 }
