@@ -12,6 +12,8 @@ body {
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
   position: fixed;
   background: white;
   padding: 1.5rem 1rem 0;
@@ -25,8 +27,26 @@ body {
   display: inline;
 }
 
+.btn-hamburger{
+  display: inline;
+}
+
+.btn-hamburger > div{
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+@media screen and (min-width:800px) {
+  .btn-hamburger{
+    display: none;
+  }
+}
+
 .nav-list {
   display: none;
+
   list-style: none;
   padding: 0;
   text-align: right;
@@ -34,27 +54,26 @@ body {
 
 @media screen and (min-width:800px) {
   .nav-list {
-    display: block;
-    color: black;
-    text-align: right
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
-.nav:hover .nav-list{
+/* .nav:hover .nav-list{
   display: block;
-}
+} */
 
 .nav-item {
   border-top: 0;
   text-decoration: none;
-  float: right;
+  margin: 0 1rem 0;
 }
 
-@media screen and (min-width:800px) {
+/* @media screen and (min-width:800px) {
   .nav-item {
     border-top: 1px solid #333;
   }
-}
+} */
 
 .nav-link {
   display: inline-block;
@@ -101,6 +120,8 @@ body {
 
 .title{
   text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #00b894;
 }
 
 .title span {
@@ -108,12 +129,12 @@ body {
 }
 
 footer{
-  border-top: 8px solid #00b894;
+  border-top: 7px solid #00b894;
   background-color: #636e72;
   color: white;
 }
 
-footer > p{
+.company > p{
   margin: 1px 0 1.5px;
   font-size: .8em;
 }
