@@ -7,6 +7,8 @@
     <title>Landlords</title>
   </head>
   <body>
+    <header>
+      <!-- indent these lines inside header  -->
     <nav class="nav">
       <a class="logo" href="index.html">Tobby Lam</a>
       <!-- <button type="button" name="hamburger" class="btn hamburger">
@@ -29,10 +31,14 @@
         </li>
       </ul>
     </nav>
-    <h1 class="title">
-      <span>Rental Services</span>
-    </h1>
+    </header>
+    <main>
+      <!-- indent these lines inside. Include the heading inside the section to indicate that the heading is for this section (otherwise they are not grouped together) -->
     <section class="all-services">
+    <h1 class="title">
+      Rental Services
+    </h1>
+      <!-- divs have visual meaning to us as readers, but no semantic meaning, so consider making all your divs (class="services") into articles or sections to indicate that the h2 and ul / lis are all grouped together  -->
       <div class="services">
         <h2 class="service-heading">Marketing & Promotion</h2>
           <ul>
@@ -67,10 +73,11 @@
               </ul>
             </div>
     </section>
-    <h1 class="title">
-      <span>Rental Management</span>
-    </h1>
     <section class="all-services">
+    <h1 class="title">
+      Rental Management
+    </h1>
+    
       <div class="services">
         <h2 class="service-heading">Tenant Care & Rental Income</h2>
           <ul>
@@ -116,5 +123,6 @@
           </ul>
         </div>
     </section>
+  </main>
   </body>
 </html>
